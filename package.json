@@ -1,0 +1,11 @@
+{
+  "name": "element-ears",
+  "version": "1.0.0",
+  "description": "A tiny front-end framework that lets dom elements listen to changing state\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Schumaker",
+  "license": "ISC"
+}
