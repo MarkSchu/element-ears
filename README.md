@@ -6,7 +6,7 @@ A library that hooks up DOM elements to state changes.
 
 There are two basic ways to bind elements to state.
 
-### bind attribute
+### `bind` attribute
 
 Create an element and pass it a handler that change its properties. Below, when `foo` changes, `handleFoo` is called. 
 
@@ -29,7 +29,7 @@ const HelloEl = () => {
 }
 ```
 
-### bind function
+### `bind` function
 
 Create an element and pass it a callback that sets its children. Below, when `foo` changes, the callback sets the `span` as the child of the `div`.
 
