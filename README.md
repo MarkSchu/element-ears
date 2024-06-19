@@ -29,7 +29,7 @@ const HelloEl = () => {
 }
 ```
 
-### bind factory
+### bind function
 
 Create an element and pass it a callback that sets its children. Below, when `foo` changes, the callback sets the `span` as the child of the `div`.
 
