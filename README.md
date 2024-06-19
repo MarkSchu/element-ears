@@ -10,7 +10,7 @@ There are two basic ways to bind elements to state.
 
 Create an element and pass it a handler that change its properties. Below, when `foo` changes, `handleFoo` is called. 
 
-```
+```javascript
 import { ObservableVar, element } from 'element-ears';
 
 const HelloEl = () => {
@@ -33,7 +33,7 @@ const HelloEl = () => {
 
 Create an element and pass it a callback that sets its children. Below, when `foo` changes, the callback sets the `span` as the child of the `div`.
 
-```
+```javascript
 import { ObservableVar, bind, element } from 'element-ears';
 
 const WorldEl = () => {
