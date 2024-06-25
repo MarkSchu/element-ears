@@ -2,7 +2,7 @@ function addChildren(parent, children) {
     children.forEach(child => parent.appendChild(child));
 }
 
-function clearChildren(el) {
+export function clearChildren(el) {
     var child = el.lastElementChild; 
     while (child) {
         el.removeChild(child);
@@ -59,7 +59,7 @@ function setAttributes(el, attrs) {
     }
 }
 
-function element(tag, attrs) {
+export function element(tag, attrs) {
     // accepts both multiple child arguments and an array of children
     // ('div', {}, child1, child2)
     // ('div', {}, [child1, child2])
@@ -70,5 +70,4 @@ function element(tag, attrs) {
     return el;
 }
 
-exports.clearChildren = clearChildren;
-exports.element = element;
+

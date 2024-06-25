@@ -1,4 +1,4 @@
-class ObservableEvent {
+export class ObservableEvent {
 
     constructor(value) {
         this.callbacks =[];
@@ -15,7 +15,7 @@ class ObservableEvent {
     }
 }
 
-class ObservableVar {
+export class ObservableVar {
 
     constructor(value) {
         this.value = value;
@@ -38,7 +38,7 @@ class ObservableVar {
     }
 }
 
-class ObservableBool extends ObservableVar {
+export class ObservableBool extends ObservableVar {
     toggle() {
         this.value = !this.value;
         this.emit();
@@ -53,14 +53,9 @@ class ObservableBool extends ObservableVar {
     }
 }
 
-class ObservableArray extends ObservableVar {
+export class ObservableArray extends ObservableVar {
     push(value) {
         this.value.push(value);
         this.emit();
     }
 }
-
-exports.ObservableEvent = ObservableEvent;
-exports.ObservableVar = ObservableVar;
-exports.ObservableBool = ObservableBool;
-exports.ObservableArray = ObservableArray;

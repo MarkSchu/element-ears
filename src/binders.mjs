@@ -1,6 +1,6 @@
-const { element, clearChildren } = require('./dom');
+import { element, clearChildren }  from './dom.mjs';
 
-function bind(tag, attrs, observable, createElement) {
+export function bind(tag, attrs, observable, createElement) {
     let parent = element(tag, attrs); 
     observable.onEmit((value) => {
         let children = createElement(value);
@@ -16,7 +16,7 @@ function bind(tag, attrs, observable, createElement) {
     return parent;
 }
 
-function listen(tag, attrs, observable, createElement) {
+export function listen(tag, attrs, observable, createElement) {
     let parent = element(tag, attrs); 
     observable.onEmit((value) => {
         let children = createElement(value);
@@ -32,5 +32,3 @@ function listen(tag, attrs, observable, createElement) {
     return parent;
 }
 
-exports.bind = bind;
-exports.listen = listen;
